@@ -5,6 +5,12 @@ VisualStudioVersion = 17.10.34916.146
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManageMoney.Domain", "ManageMoney.Domain\ManageMoney.Domain.csproj", "{FF3FDE87-6B62-430B-93AE-1A5544191658}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "WebApplication", "WebApplication", "{870D2794-73E0-445B-BC9A-EA9C1B6FD3E4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{D9832627-1275-4DB0-B9EE-CDD01CA6A9BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{C6785202-668F-4A7E-8377-6A88069004DA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +24,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FF3FDE87-6B62-430B-93AE-1A5544191658} = {C6785202-668F-4A7E-8377-6A88069004DA}
+		{D9832627-1275-4DB0-B9EE-CDD01CA6A9BF} = {870D2794-73E0-445B-BC9A-EA9C1B6FD3E4}
+		{C6785202-668F-4A7E-8377-6A88069004DA} = {D9832627-1275-4DB0-B9EE-CDD01CA6A9BF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8BDD2255-E032-4DDF-BF1D-0CBDCE04393C}
