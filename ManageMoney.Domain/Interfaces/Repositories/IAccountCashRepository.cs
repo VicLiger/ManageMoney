@@ -1,12 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ManageMoney.Domain.Entities;
 
 namespace ManageMoney.Domain.Interfaces.Repositories
 {
-    internal interface IAccountCash
+    internal interface IAccountCashRepository : IBasicImplemention<Consumption>
     {
     }
 }

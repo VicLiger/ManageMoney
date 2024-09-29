@@ -9,7 +9,7 @@
         public DateTime CreateDate { get; private set; }
 
         public Guid AccountCashId { get; private set; }
-        public AccountCash Cash { get; private set; }
+        public Consumption Cash { get; private set; }
 
 
         public User(Guid id, string name, string email, string password)
