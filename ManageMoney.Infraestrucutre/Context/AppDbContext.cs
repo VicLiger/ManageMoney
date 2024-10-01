@@ -4,9 +4,9 @@ using System;
 
 namespace ManageMoney.Infraestrucutre.Context
 {
-    public class AppContext : DbContext
+    public class AppDbContext : DbContext
     {
-        public AppContext(DbContextOptions<AppContext> options) : base(options)
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
         {
             
         }
@@ -21,7 +21,7 @@ namespace ManageMoney.Infraestrucutre.Context
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            builder.ApplyConfigurationsFromAssembly(typeof(AppContext).Assembly);
+            builder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
         }
     }
 }

@@ -9,7 +9,7 @@ namespace ManageMoney.Infraestrucutre.EntitiesConfigurations
     {
         public void Configure(EntityTypeBuilder<Investiment> builder)
         {
-            throw new NotImplementedException();
+            builder.HasKey(x => x.Id);
         }
     }
 }

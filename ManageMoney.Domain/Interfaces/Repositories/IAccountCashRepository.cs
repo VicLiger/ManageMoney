@@ -2,7 +2,12 @@
 
 namespace ManageMoney.Domain.Interfaces.Repositories
 {
-    internal interface IAccountCashRepository : IBasicImplemention<Consumption>
+    public interface IAccountCashRepository 
     {
+        IEnumerable<Task<AccountCash>> GetAllAsync(CancellationToken cancellationToken);
+        Task<AccountCash> GetIdAsync(int id, CancellationToken cancellationToken);
+        void Create(AccountCash accountCash);
+        void Delete(AccountCash accountCash);
+        void Update(AccountCash accountCash);
     }
 }
