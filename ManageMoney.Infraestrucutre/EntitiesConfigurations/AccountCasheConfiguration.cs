@@ -9,7 +9,6 @@ namespace ManageMoney.Infraestrucutre.EntitiesConfigurations
     {
         public void Configure(EntityTypeBuilder<Consumption> builder)
         {
-            throw new NotImplementedException();
         }
     }
 }

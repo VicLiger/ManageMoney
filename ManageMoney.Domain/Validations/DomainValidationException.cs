@@ -7,9 +7,6 @@
             
         }
 
-        public static void WhenString(bool )
-        {
 
-        }
     }
 }

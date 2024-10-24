@@ -11,7 +11,7 @@ namespace ManageMoney.Infraestrucutre.Context
             
         }
 
-        public DbSet<Consumption> AccountCashe { get; set; }
+        public DbSet<AccountCash> AccountCashe { get; set; }
         public DbSet<Consumption> Consumption { get; set; }
         public DbSet<FinancialObjective> FinancialObjective { get; set; }
         public DbSet<Investiment> Investiment { get; set; }
@@ -21,7 +21,7 @@ namespace ManageMoney.Infraestrucutre.Context
         protected override void OnModelCreating(ModelBuilder builder)
         {
             base.OnModelCreating(builder);
-            builder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
+            //builder.ApplyConfigurationsFromAssembly(typeof(AppDbContext).Assembly);
         }
     }
 }

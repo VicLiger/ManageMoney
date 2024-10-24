@@ -8,7 +8,6 @@ namespace ManageMoney.Infraestrucutre.EntitiesConfigurations
     {
         public void Configure(EntityTypeBuilder<FinancialObjective> builder)
         {
-            throw new NotImplementedException();
         }
     }
 }

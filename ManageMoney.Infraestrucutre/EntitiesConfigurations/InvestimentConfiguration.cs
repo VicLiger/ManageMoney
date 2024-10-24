@@ -9,7 +9,6 @@ namespace ManageMoney.Infraestrucutre.EntitiesConfigurations
     {
         public void Configure(EntityTypeBuilder<Investiment> builder)
         {
-            builder.HasKey(x => x.Id);
         }
     }
 }

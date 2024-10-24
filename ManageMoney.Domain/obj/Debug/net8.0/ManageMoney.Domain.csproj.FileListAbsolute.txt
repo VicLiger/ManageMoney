@@ -1,0 +1,12 @@
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Domain\obj\Debug\net8.0\ManageMoney.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Domain\obj\Debug\net8.0\ManageMoney.Domain.AssemblyInfoInputs.cache
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Domain\obj\Debug\net8.0\ManageMoney.Domain.AssemblyInfo.cs
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Domain\obj\Debug\net8.0\ManageMoney.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Domain\obj\Debug\net8.0\ManageMoney.Domain.sourcelink.json
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Domain\bin\Debug\net8.0\ManageMoney.Domain.deps.json
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Domain\bin\Debug\net8.0\ManageMoney.Domain.dll
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Domain\bin\Debug\net8.0\ManageMoney.Domain.pdb
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Domain\obj\Debug\net8.0\ManageMoney.Domain.dll
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Domain\obj\Debug\net8.0\refint\ManageMoney.Domain.dll
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Domain\obj\Debug\net8.0\ManageMoney.Domain.pdb
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Domain\obj\Debug\net8.0\ref\ManageMoney.Domain.dll

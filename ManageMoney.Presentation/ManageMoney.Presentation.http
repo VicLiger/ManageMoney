@@ -1,0 +1,6 @@
+@ManageMoney.Presentation_HostAddress = http://localhost:5010
+
+GET {{ManageMoney.Presentation_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
