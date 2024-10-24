@@ -1,6 +1,7 @@
 ﻿using ManageMoney.Domain.Entities;
 using ManageMoney.Domain.Interfaces.Repositories;
 using ManageMoney.Infraestrucutre.Context;
+using Microsoft.EntityFrameworkCore;
 
 namespace ManageMoney.Infraestrucutre.Repositories
 {
@@ -14,27 +15,25 @@ namespace ManageMoney.Infraestrucutre.Repositories
 
         public void Create(User user)
         {
-            throw new NotImplementedException();
+            context.Add(user);
         }
 
         public void Delete(User user)
         {
-            throw new NotImplementedException();
+            context.Remove(user);
         }
-
-        public Task<IEnumerable<User>> GetAllAsync(CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
-
-        public Task<User> GetIdAsync(Guid id, CancellationToken cancellationToken)
-        {
-            throw new NotImplementedException();
-        }
-
         public void Update(User user)
         {
-            throw new NotImplementedException();
+            context.Update(user);
+        }
+        public async Task<IEnumerable<User>> GetAllAsync(CancellationToken cancellationToken)
+        {
+            return await context.Set<User>().ToListAsync(cancellationToken);
+        }
+
+        public async Task<User> GetIdAsync(Guid id, CancellationToken cancellationToken)
+        {
+            return await context.Set<User>().FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
         }
     }
 }
