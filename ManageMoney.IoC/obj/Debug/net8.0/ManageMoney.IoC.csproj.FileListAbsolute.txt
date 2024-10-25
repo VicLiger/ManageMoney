@@ -18,3 +18,5 @@ C:\Users\Victor\source\repos\ManageMoney\ManageMoney.IoC\obj\Debug\net8.0\Manage
 C:\Users\Victor\source\repos\ManageMoney\ManageMoney.IoC\obj\Debug\net8.0\ref\ManageMoney.IoC.dll
 C:\Users\Victor\source\repos\ManageMoney\ManageMoney.IoC\bin\Debug\net8.0\ManageMoney.IoC.runtimeconfig.json
 C:\Users\Victor\source\repos\ManageMoney\ManageMoney.IoC\obj\Debug\net8.0\ManageMoney.IoC.genruntimeconfig.cache
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.IoC\bin\Debug\net8.0\ManageMoney.Application.dll
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.IoC\bin\Debug\net8.0\ManageMoney.Application.pdb

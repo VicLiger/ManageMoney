@@ -4,6 +4,9 @@ using ManageMoney.Infraestrucutre.Context;
 using Microsoft.EntityFrameworkCore;
 using ManageMoney.Domain.Interfaces.Repositories;
 using ManageMoney.Infraestrucutre.Repositories;
+using ManageMoney.Application.Interfaces;
+using ManageMoney.Application.Services;
+using ManageMoney.Application.Mappings;
 
 namespace ManageMoney.IoC
 {
@@ -22,6 +25,17 @@ namespace ManageMoney.IoC
             services.AddScoped<IInvestimentRepository, InvestimentRepository>(); // Correção de nome
             services.AddScoped<IPerfomanceRepository, PerformanceRepository>(); // Correção de nome
             services.AddScoped<IUserRepository, UserRepository>();
+
+
+            services.AddScoped<IAccountCashService, AccountCashService>();
+            services.AddScoped<IConsumptionService, ConsumptionService>();
+            services.AddScoped<IFinancialObjectiveService, FinancialObjectiveService>();
+            services.AddScoped<IInvestimentService, InvestimentService>();
+            services.AddScoped<IPerfomanceService, PerformanceService>();
+            services.AddScoped<IUserService, UserService>();
+
+            services.AddAutoMapper(typeof(DomainDTOMappingProfile));
+
 
             return services;
         }

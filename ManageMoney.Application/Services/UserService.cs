@@ -6,7 +6,7 @@ using ManageMoney.Domain.Interfaces.Repositories;
 
 namespace ManageMoney.Application.Services
 {
-    internal class UserService : IUserService
+    public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
         private readonly IMapper _mapper;

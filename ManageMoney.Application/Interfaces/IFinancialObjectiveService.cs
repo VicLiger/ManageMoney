@@ -3,7 +3,7 @@ using ManageMoney.Application.DTOs;
 
 namespace ManageMoney.Application.Interfaces
 {
-    public interface IFinancialObjective
+    public interface IFinancialObjectiveService
     {
         Task<IEnumerable<FinancialObjectiveDTO>> GetFinancialObjectives(CancellationToken cancellationToken);
         Task<FinancialObjectiveDTO> GetFinancialObjective(Guid id, CancellationToken cancellationToken);

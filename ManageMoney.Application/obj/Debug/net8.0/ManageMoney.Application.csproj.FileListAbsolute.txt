@@ -10,3 +10,7 @@ C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Application\obj\Debug\net8.
 C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Application\obj\Debug\net8.0\refint\ManageMoney.Application.dll
 C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Application\obj\Debug\net8.0\ManageMoney.Application.pdb
 C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Application\obj\Debug\net8.0\ref\ManageMoney.Application.dll
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Application\obj\Debug\net8.0\ManageMoney.Application.csproj.AssemblyReference.cache
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Application\bin\Debug\net8.0\ManageMoney.Domain.dll
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Application\bin\Debug\net8.0\ManageMoney.Domain.pdb
+C:\Users\Victor\source\repos\ManageMoney\ManageMoney.Application\obj\Debug\net8.0\ManageMo.D8F4A146.Up2Date

@@ -2,6 +2,22 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "AutoMapper/13.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Humanizer.Core/2.14.1": {
         "type": "package",
         "compile": {
@@ -971,6 +987,20 @@
           "buildTransitive/netcoreapp3.1/_._": {}
         }
       },
+      "ManageMoney.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AutoMapper": "13.0.1",
+          "ManageMoney.Domain": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ManageMoney.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ManageMoney.Application.dll": {}
+        }
+      },
       "ManageMoney.Domain/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -1002,6 +1032,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
+          "AutoMapper": "13.0.1",
+          "ManageMoney.Application": "1.0.0",
           "ManageMoney.Domain": "1.0.0",
           "ManageMoney.Infraestrucutre": "1.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
@@ -1017,6 +1049,21 @@
     }
   },
   "libraries": {
+    "AutoMapper/13.0.1": {
+      "sha512": "/Fx1SbJ16qS7dU4i604Sle+U9VLX+WSNVJggk6MupKVkYvvBm4XqYaeFuf67diHefHKHs50uQIS2YEDFhPCakQ==",
+      "type": "package",
+      "path": "automapper/13.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.13.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/net6.0/AutoMapper.dll",
+        "lib/net6.0/AutoMapper.xml"
+      ]
+    },
     "Humanizer.Core/2.14.1": {
       "sha512": "lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "type": "package",
@@ -2762,6 +2809,11 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "ManageMoney.Application/1.0.0": {
+      "type": "project",
+      "path": "../ManageMoney.Application/ManageMoney.Application.csproj",
+      "msbuildProject": "../ManageMoney.Application/ManageMoney.Application.csproj"
     },
     "ManageMoney.Domain/1.0.0": {
       "type": "project",

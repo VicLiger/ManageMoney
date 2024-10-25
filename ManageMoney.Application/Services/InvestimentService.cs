@@ -3,14 +3,11 @@ using ManageMoney.Application.DTOs;
 using ManageMoney.Application.Interfaces;
 using ManageMoney.Domain.Entities;
 using ManageMoney.Domain.Interfaces.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Threading;
-using System.Threading.Tasks;
+
 
 namespace ManageMoney.Application.Services
 {
-    internal class InvestimentService : IInvestimentService
+    public class InvestimentService : IInvestimentService
     {
         private readonly IInvestimentRepository _investimentRepository;
         private readonly IMapper _mapper;

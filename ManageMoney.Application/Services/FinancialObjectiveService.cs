@@ -6,7 +6,7 @@ using ManageMoney.Domain.Interfaces.Repositories;
 
 namespace ManageMoney.Application.Services
 {
-    internal class FinancialObjectiveService : IFinancialObjective
+    public class FinancialObjectiveService : IFinancialObjectiveService
     {
         private readonly IFinancialObjectiveRepository _financialObjectiveRepository;
         private readonly IMapper _mapper;
