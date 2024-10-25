@@ -3,13 +3,13 @@ namespace ManageMoney.Application.DTOs
 {
     public class PerfomanceDTO
     {
-        public Guid Id { get; private set; }
-        public decimal Value { get; private set; }
-        public DateTime Date { get; private set; }
-        public string Type { get; private set; }
+        public Guid Id { get;  set; }
+        public decimal Value { get;  set; }
+        public DateTime Date { get;  set; }
+        public string Type { get;  set; }
 
         // Relações
-        public Guid InvestimentId { get; private set; }
-        public InvestimentDTO Investiment { get; private set; }
+        public Guid InvestimentId { get;  set; }
+        public InvestimentDTO Investiment { get;  set; }
     }
 }

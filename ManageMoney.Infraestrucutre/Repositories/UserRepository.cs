@@ -8,6 +8,7 @@ namespace ManageMoney.Infraestrucutre.Repositories
     public class UserRepository : IUserRepository
     {
         private readonly AppDbContext context;
+
         public UserRepository(AppDbContext _context)
         {
             context = _context;
@@ -16,16 +17,21 @@ namespace ManageMoney.Infraestrucutre.Repositories
         public void Create(User user)
         {
             context.Add(user);
+            context.SaveChanges();
         }
 
         public void Delete(User user)
         {
             context.Remove(user);
+            context.SaveChanges();
         }
+
         public void Update(User user)
         {
             context.Update(user);
+            context.SaveChanges();
         }
+
         public async Task<IEnumerable<User>> GetAllAsync(CancellationToken cancellationToken)
         {
             return await context.Set<User>().ToListAsync(cancellationToken);

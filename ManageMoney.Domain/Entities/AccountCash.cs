@@ -2,12 +2,12 @@
 {
     public class AccountCash
     {
-        public Guid Id { get; private set; }
-        public string Name { get; private set; }
-        public decimal Balance { get; private set; }
+        public Guid Id { get;  set; }
+        public string Name { get;  set; }
+        public decimal Balance { get;  set; }
 
-        public Guid UserId {  get; private set; }
-        public User UserAccount { get; private set; }
+        public Guid UserId {  get;  set; }
+        public User UserAccount { get;  set; }
 
         public AccountCash(Guid id, string name, decimal balance)
         {

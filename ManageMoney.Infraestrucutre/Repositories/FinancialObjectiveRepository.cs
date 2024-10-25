@@ -8,6 +8,7 @@ namespace ManageMoney.Infraestrucutre.Repositories
     public class FinancialObjectiveRepository : IFinancialObjectiveRepository
     {
         private readonly AppDbContext context;
+
         public FinancialObjectiveRepository(AppDbContext _context)
         {
             context = _context;
@@ -15,18 +16,22 @@ namespace ManageMoney.Infraestrucutre.Repositories
 
         public void Create(FinancialObjective financialObjective)
         {
-            context.Add(financialObjective);
+             context.AddAsync(financialObjective);
+             context.SaveChangesAsync(); // Persistir a mudança no banco de dados
         }
 
         public void Delete(FinancialObjective financialObjective)
         {
             context.Remove(financialObjective);
+             context.SaveChangesAsync(); // Persistir a mudança no banco de dados
         }
 
         public void Update(FinancialObjective financialObjective)
         {
             context.Update(financialObjective);
+             context.SaveChangesAsync(); // Persistir a mudança no banco de dados
         }
+
         public async Task<IEnumerable<FinancialObjective>> GetAllAsync(CancellationToken cancellationToken)
         {
             return await context.Set<FinancialObjective>().ToListAsync(cancellationToken);
@@ -36,7 +41,5 @@ namespace ManageMoney.Infraestrucutre.Repositories
         {
             return await context.Set<FinancialObjective>().FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
         }
-
-        
     }
 }

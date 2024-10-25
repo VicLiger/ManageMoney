@@ -4,11 +4,11 @@ namespace ManageMoney.Domain.Entities
 {
     public class Consumption
     {
-        public Guid Id { get; private set; }
-        public decimal Value { get; private set; }
-        public string Category { get; private set; }
-        public DateTime Date { get; private set; }
-        public string Description { get; private set; }
+        public Guid Id { get;  set; }
+        public decimal Value { get;  set; }
+        public string Category { get;  set; }
+        public DateTime Date { get;  set; }
+        public string Description { get;  set; }
 
         public Consumption(Guid id, decimal value, string category, string description)
         {

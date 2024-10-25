@@ -2,13 +2,13 @@
 {
     public class Investiment
     {
-        public Guid Id { get; private set; }
-        public string Type { get; private set; }
-        public decimal Value { get; private set; }
-        public DateTime Date { get; private set; }
+        public Guid Id { get;  set; }
+        public string Type { get;  set; }
+        public decimal Value { get;  set; }
+        public DateTime Date { get;  set; }
 
-        public Guid PerfomanceId { get; private set; }
-        public Performance Performance { get; private set; }
+        public Guid PerfomanceId { get;  set; }
+        public Performance Performance { get;  set; }
 
         public Investiment(Guid id, decimal value, string type)
         {

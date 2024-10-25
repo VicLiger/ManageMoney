@@ -8,6 +8,7 @@ namespace ManageMoney.Infraestrucutre.Repositories
     public class PerformanceRepository : IPerfomanceRepository
     {
         private readonly AppDbContext context;
+
         public PerformanceRepository(AppDbContext _context)
         {
             context = _context;
@@ -16,17 +17,21 @@ namespace ManageMoney.Infraestrucutre.Repositories
         public void Create(Performance performance)
         {
             context.Add(performance);
+            context.SaveChanges();
         }
 
         public void Delete(Performance performance)
         {
             context.Remove(performance);
+            context.SaveChanges();
         }
 
         public void Update(Performance performance)
         {
             context.Update(performance);
+            context.SaveChanges();
         }
+
         public async Task<IEnumerable<Performance>> GetAllAsync(CancellationToken cancellationToken)
         {
             return await context.Set<Performance>().ToListAsync(cancellationToken);
@@ -36,7 +41,5 @@ namespace ManageMoney.Infraestrucutre.Repositories
         {
             return await context.Set<Performance>().FirstOrDefaultAsync(x => x.Id == id, cancellationToken);
         }
-
-       
     }
 }

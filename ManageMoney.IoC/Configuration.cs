@@ -20,7 +20,7 @@ namespace ManageMoney.IoC
 
             // Correções nas interfaces e nomes das classes
             services.AddScoped<IAccountCashRepository, AccountCashRepository>();
-            services.AddScoped<IConsumptionRepository, ConsumiptionRepository>(); // Correção de nome
+            services.AddScoped<IConsumptionRepository, ConsumptionRepository>(); // Correção de nome
             services.AddScoped<IFinancialObjectiveRepository, FinancialObjectiveRepository>();
             services.AddScoped<IInvestimentRepository, InvestimentRepository>(); // Correção de nome
             services.AddScoped<IPerfomanceRepository, PerformanceRepository>(); // Correção de nome

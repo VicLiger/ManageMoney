@@ -2,14 +2,14 @@
 {
     public class User
     {
-        public Guid Id { get; private set; }
-        public string Name { get; private set; }
-        public string Email { get; private set; }
-        public string Password { get; private set; }
-        public DateTime CreateDate { get; private set; }
+        public Guid Id { get;  set; }
+        public string Name { get;  set; }
+        public string Email { get;  set; }
+        public string Password { get;  set; }
+        public DateTime CreateDate { get;  set; }
 
-        public Guid AccountCashId { get; private set; }
-        public Consumption Cash { get; private set; }
+        public Guid AccountCashId { get;  set; }
+        public Consumption Cash { get;  set; }
 
 
         public User(Guid id, string name, string email, string password)
