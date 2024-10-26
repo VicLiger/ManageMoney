@@ -23,10 +23,6 @@ namespace ManageMoney.Infraestrucutre.EntitiesConfigurations
             builder.Property(i => i.Date)
                 .IsRequired();
 
-            builder.HasOne(i => i.Performance)
-                .WithMany()
-                .HasForeignKey(i => i.PerfomanceId)
-                .OnDelete(DeleteBehavior.Cascade);
         }
     }
 }

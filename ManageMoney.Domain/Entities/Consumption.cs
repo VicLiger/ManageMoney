@@ -4,16 +4,14 @@ namespace ManageMoney.Domain.Entities
 {
     public class Consumption
     {
-        public Guid Id { get;  set; }
-        public decimal Value { get;  set; }
-        public string Category { get;  set; }
-        public DateTime Date { get;  set; }
-        public string Description { get;  set; }
+        public Guid Id { get; set; }
+        public decimal Value { get; set; }
+        public string Category { get; set; }
+        public DateTime Date { get; set; }
+        public string Description { get; set; }
 
         public Consumption(Guid id, decimal value, string category, string description)
         {
-            // Fazer a validação
-
             Id = id;
             Value = value;
             Category = category;
@@ -21,15 +19,12 @@ namespace ManageMoney.Domain.Entities
             Description = description;
         }
 
-        public Consumption( decimal value, string category, string description)
+        public Consumption(decimal value, string category, string description)
         {
-            // Fazer a validação
-
             Value = value;
             Category = category;
             Date = DateTime.Now;
             Description = description;
         }
-
     }
 }

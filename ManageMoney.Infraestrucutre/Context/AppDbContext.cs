@@ -15,7 +15,6 @@ namespace ManageMoney.Infraestrucutre.Context
         public DbSet<Consumption> Consumption { get; set; }
         public DbSet<FinancialObjective> FinancialObjective { get; set; }
         public DbSet<Investiment> Investiment { get; set; }
-        public DbSet<Performance> Performance { get; set; }
         public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)

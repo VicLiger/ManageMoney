@@ -23,7 +23,6 @@ namespace ManageMoney.IoC
             services.AddScoped<IConsumptionRepository, ConsumptionRepository>(); // Correção de nome
             services.AddScoped<IFinancialObjectiveRepository, FinancialObjectiveRepository>();
             services.AddScoped<IInvestimentRepository, InvestimentRepository>(); // Correção de nome
-            services.AddScoped<IPerfomanceRepository, PerformanceRepository>(); // Correção de nome
             services.AddScoped<IUserRepository, UserRepository>();
 
 
@@ -31,7 +30,6 @@ namespace ManageMoney.IoC
             services.AddScoped<IConsumptionService, ConsumptionService>();
             services.AddScoped<IFinancialObjectiveService, FinancialObjectiveService>();
             services.AddScoped<IInvestimentService, InvestimentService>();
-            services.AddScoped<IPerfomanceService, PerformanceService>();
             services.AddScoped<IUserService, UserService>();
 
             services.AddAutoMapper(typeof(DomainDTOMappingProfile));

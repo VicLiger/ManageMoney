@@ -17,7 +17,6 @@ namespace ManageMoney.Application.Mappings
             CreateMap<Consumption, ConsumptionDTO>().ReverseMap();
             CreateMap<FinancialObjective, FinancialObjectiveDTO>().ReverseMap();
             CreateMap<Investiment, InvestimentDTO>().ReverseMap();
-            CreateMap<Performance, PerfomanceDTO>().ReverseMap();
             CreateMap<User, UserDTO>().ReverseMap();
 
 
