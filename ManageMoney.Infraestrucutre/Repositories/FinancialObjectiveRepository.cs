@@ -17,19 +17,19 @@ namespace ManageMoney.Infraestrucutre.Repositories
         public void Create(FinancialObjective financialObjective)
         {
              context.AddAsync(financialObjective);
-             context.SaveChangesAsync(); // Persistir a mudança no banco de dados
+             context.SaveChangesAsync(); 
         }
 
         public void Delete(FinancialObjective financialObjective)
         {
             context.Remove(financialObjective);
-             context.SaveChangesAsync(); // Persistir a mudança no banco de dados
+             context.SaveChangesAsync(); 
         }
 
         public void Update(FinancialObjective financialObjective)
         {
             context.Update(financialObjective);
-             context.SaveChangesAsync(); // Persistir a mudança no banco de dados
+             context.SaveChangesAsync(); 
         }
 
         public async Task<IEnumerable<FinancialObjective>> GetAllAsync(CancellationToken cancellationToken)
