@@ -1,18 +1,15 @@
-#Projeto ManageMoney
+# Projeto ManageMoney
 
-O projeto ManageMoney se trata de um API de controle monetário que tem como objetivo ajudar as pessoas a terem maior controle monetário da sua vida, ajudando com financias, gastos
-e investimentos. 
+O projeto ManageMoney é uma API de controle monetário que tem como objetivo ajudar as pessoas a terem maior controle financeiro sobre suas vidas, auxiliando com finanças, gastos e investimentos.
 
-Obs: está em desenvolvimento
+> **Obs:** Este projeto está em desenvolvimento.
 
+## Bibliotecas do Projeto
 
-##Bibliotecas do Projeto
+- **Automapper**
+- **MediatR**
+- **Npgsql**
 
-**Automapper**
-**MediatR**
-**Npgsql**
+## Versão do Projeto
 
-
-##Versão do projeto
-
-**.NET 8**
+- **.NET 8**
