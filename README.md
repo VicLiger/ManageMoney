@@ -12,7 +12,7 @@ O projeto ManageMoney é uma API de controle monetário que tem como objetivo aj
 
 ## Versão do Projeto
 
-- **.NET 8**
+- **.NET 8 Core**
 
 
 ## Versão do Projeto
