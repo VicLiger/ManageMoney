@@ -18,12 +18,12 @@ namespace ManageMoney.Infraestrucutre.EntitiesConfigurations
 
             builder.Property(ac => ac.Balance)
                 .IsRequired() 
-                .HasColumnType("decimal(18,2)"); 
+                .HasColumnType("decimal(18,2)");
 
             builder.HasOne(ac => ac.UserAccount)
-                .WithMany() 
+                .WithMany()
                 .HasForeignKey(ac => ac.UserId)
-                .IsRequired(); 
+                .IsRequired();
 
             builder.HasQueryFilter(ac => ac.Balance > 0); 
         }

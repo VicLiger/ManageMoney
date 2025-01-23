@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "+efMQApAYYW/CeOWWascLepE3NvN48FEfMBh5kyGfG0=",
+  "Hash": "Y1rHAImEf+lTRXuKQ++yG6+KidGPP0YiySjJzBQ7sG0=",
   "Source": "ManageMoney.Presentation",
   "BasePath": "_content/ManageMoney.Presentation",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

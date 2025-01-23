@@ -31,6 +31,36 @@
           }
         }
       },
+      "MediatR/12.4.1": {
+        "type": "package",
+        "dependencies": {
+          "MediatR.Contracts": "[2.0.1, 3.0.0)",
+          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net6.0/MediatR.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0/MediatR.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "MediatR.Contracts/2.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
         "compile": {
@@ -992,7 +1022,8 @@
         "framework": ".NETCoreApp,Version=v8.0",
         "dependencies": {
           "AutoMapper": "13.0.1",
-          "ManageMoney.Domain": "1.0.0"
+          "ManageMoney.Domain": "1.0.0",
+          "MediatR": "12.4.1"
         },
         "compile": {
           "bin/placeholder/ManageMoney.Application.dll": {}
@@ -1080,6 +1111,37 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "MediatR/12.4.1": {
+      "sha512": "0tLxCgEC5+r1OCuumR3sWyiVa+BMv3AgiU4+pz8xqTc+2q1WbUEXFOr7Orm96oZ9r9FsldgUtWvB2o7b9jDOaw==",
+      "type": "package",
+      "path": "mediatr/12.4.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "gradient_128x128.png",
+        "lib/net6.0/MediatR.dll",
+        "lib/net6.0/MediatR.xml",
+        "lib/netstandard2.0/MediatR.dll",
+        "lib/netstandard2.0/MediatR.xml",
+        "mediatr.12.4.1.nupkg.sha512",
+        "mediatr.nuspec"
+      ]
+    },
+    "MediatR.Contracts/2.0.1": {
+      "sha512": "FYv95bNT4UwcNA+G/J1oX5OpRiSUxteXaUt2BJbRSdRNiIUNbggJF69wy6mnk2wYToaanpdXZdCwVylt96MpwQ==",
+      "type": "package",
+      "path": "mediatr.contracts/2.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "gradient_128x128.png",
+        "lib/netstandard2.0/MediatR.Contracts.dll",
+        "lib/netstandard2.0/MediatR.Contracts.xml",
+        "mediatr.contracts.2.0.1.nupkg.sha512",
+        "mediatr.contracts.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
@@ -2838,23 +2900,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Victor\\.nuget\\packages\\": {},
+    "C:\\Users\\victo\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Victor\\source\\repos\\ManageMoney\\ManageMoney.Presentation\\ManageMoney.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\victo\\OneDrive\\Documentos\\Projetos\\ManageMoney\\ManageMoney.Presentation\\ManageMoney.Presentation.csproj",
       "projectName": "ManageMoney.Presentation",
-      "projectPath": "C:\\Users\\Victor\\source\\repos\\ManageMoney\\ManageMoney.Presentation\\ManageMoney.Presentation.csproj",
-      "packagesPath": "C:\\Users\\Victor\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Victor\\source\\repos\\ManageMoney\\ManageMoney.Presentation\\obj\\",
+      "projectPath": "C:\\Users\\victo\\OneDrive\\Documentos\\Projetos\\ManageMoney\\ManageMoney.Presentation\\ManageMoney.Presentation.csproj",
+      "packagesPath": "C:\\Users\\victo\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\victo\\OneDrive\\Documentos\\Projetos\\ManageMoney\\ManageMoney.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Victor\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\victo\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -2870,8 +2932,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Victor\\source\\repos\\ManageMoney\\ManageMoney.IoC\\ManageMoney.IoC.csproj": {
-              "projectPath": "C:\\Users\\Victor\\source\\repos\\ManageMoney\\ManageMoney.IoC\\ManageMoney.IoC.csproj"
+            "C:\\Users\\victo\\OneDrive\\Documentos\\Projetos\\ManageMoney\\ManageMoney.IoC\\ManageMoney.IoC.csproj": {
+              "projectPath": "C:\\Users\\victo\\OneDrive\\Documentos\\Projetos\\ManageMoney\\ManageMoney.IoC\\ManageMoney.IoC.csproj"
             }
           }
         }
@@ -2885,7 +2947,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -2915,7 +2978,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.302/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
